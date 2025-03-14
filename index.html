@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+
+	<title>Colégio Padre Carmelo Perrone</title>
+
+	<script src="https://unpkg.com/feather-icons"></script>
+
+	<link rel="stylesheet" href="style.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+	<header>
+		<nav>
+			<p id="Home"><img src="logo.jpg" alt="some text" width=60 height=60></p>
+			<ul>
+				<li><a href="#Home">Cursos</a></li>
+				<li><a href="#Pacotes">Docentes</a></li>
+				<li><a href="#Servicos">Alunos</a></li>
+				<li><a href="#Contato">Atividades</a></li>
+                <li><a href="#Cadastro">Login</a></li>
+			</ul>
+		</nav>
+
+		<div class="header-content">
+			<h1>Colégio Estadual Padre Carmelo Perrone</h1>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+		</div>
+	</header>
+
+	<section class="pacotes" id="Pacotes">
+
+		<h1 class="pacotes-title">Conheça Nosso Colégio</h1>
+		<div class="pacotes-cards">
+			<div class="card">
+
+				<img class='card-image' src="colegio.jpg" alt="fundamental">
+				<div class="card-content">
+                    <br>
+					<h1>Ensino Fundamental</h1>
+					<p>Ensino fundamental do <br> 6 a 9 série</p>
+				</div>
+			</div>
+
+			<div class="card">
+
+
+				<img class='card-image' src="colegio.jpg" alt="regular">
+				<div class="card-content">
+                    <br>
+					<h1>Ensino Médio Regular</h1>
+					<p>Ensino Médio do <br> 1 ao 3 ano sem curso técnico</p>
+				</div>
+			</div>
+
+			<div class="card">
+
+				<img class='card-image' src="colegio.jpg" alt="tecnico">
+				<div class="card-content">
+                    <br>
+					<h1>Ensino Médio Técnico</h1>
+					<p>Ensino do 1 ao 3 ano com curso técnico 
+                        de <br> Análise e Desenvolvimento de Sistemas ou Administração
+                    </p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="servicos" id="Servicos">
+		<h1 class="servicos-title">Fotos</h1>
+		<div class="servicos-card">
+
+			<div class="card">
+				<h3>Lorem Ipsum</h3>
+				<p>Os tours guiados são passeios que são realizados com auxílio de um guia, que além da dar informações sobre o local, também irá conduzir o passeio ao longo do trajeto.</p>
+
+				<button>Saiba Mais</button>
+			</div>
+
+			<div class="card">
+				<h3>Lorem Ipsum</h3>
+				<p>Nossos fotógrafos estão acostumados a registrar os melhores momentos das viagens para que você aproveite a paisagem sem se preocupar.</p>
+				<button>Saiba Mais</button>
+			</div>
+		</div>
+	</section>
+
+    <section class="contato" id="Contato">
+
+		<div class="contato-card">
+			<h1>Entre em contato</h1>
+			<ul>
+				<li><i data-feather="map-pin"></i>Rua Conde de Bonfim, 250</li>
+				<li><i data-feather="mail"></i>contato@vaniaviagens.com.br</li>
+				<li><i data-feather="phone"></i>+55 21 99999-9999</li>
+			</ul>
+		</div>
+
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.077292663235!2d-53.484804724844466!3d-24.963484777862156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f3d6a42226b293%3A0xd79b8b2290a9ad0d!2sCol%C3%A9gio%20Estadual%20Padre%20Carmelo%20Perrone!5e0!3m2!1spt-BR!2sbr!4v1741952185251!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</section>
+
+	<script>
+		feather.replace()
+
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault();
+
+				document.querySelector(this.getAttribute('href')).scrollIntoView({
+					behavior: 'smooth'
+				});
+			});
+		});
+
+	</script>
+</body>
+
+</html>
